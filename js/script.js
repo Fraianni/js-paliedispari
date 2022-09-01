@@ -1,10 +1,10 @@
 function is_palindrome(word) {
-    let i_reverse = word.length - 1;
+    // let i_reverse = word.length - 1;
     for (let i = 0; i < (word.length) / 2; i++) {
-        if (word[i] != word[i_reverse]) {
+        if (word[i] != word[word.length - 1 - i]) {
             return false;
         }
-        i_reverse--;
+        // i_reverse--;
     }
     return true;
 }
